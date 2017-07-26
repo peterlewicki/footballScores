@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto+Condensed|Roboto:900,400">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Football scores</title>
+		<style>
+			body { font-family: 'Roboto Condensed', sans-serif; font-size: 16px; color: #fff; background-color: #0099cc; margin: 0; padding: 0; }
+			header { background: #0060aa url(wembley.jpg) no-repeat right top; padding: 1px; margin: 0 0 35px 0; min-height: 165px; min-width: 1200px;}
+			header h1 { font-family: 'Roboto Slab', serif; font-size: 2.3em; text-transform: uppercase; margin: 50px 0 5px 30px; }
+			header p { line-height: 20px; font-size: 1.2em; margin: 0; padding: 0px 30px 15px 30px; color: rgba(255,255,255,.6); }
+			p.source { font-size: .8em; font-style: italic; margin: 0 0 0 30px; color: rgba(255,255,255,.5); }
+			p.source a { color: rgba(255,255,255,.75); padding-left: 7px; }
+
+		ol.players {
+			list-style-type: none; margin: 0 0 0 30px;
+		}
+
+		ol.players li { counter-increment: myCounter;
+			margin: 0 0 45px 0; padding: 13px 0 0 65px;
+			position: relative;
+			color: #ccffff; font-size: .9em;
+		}
+ol.players li::before {
+	content: counter(myCounter, decimal-leading-zero);
+	display: inline-block;
+	text-align: center;
+	font-size: 4em;
+	line-height: 1.3em;
+	background-color: #fff;
+	color: #0099cc;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	padding: 10px;
+	position: absolute;
+	top: 0; left: -40px;
+	border-radius: 5px;
+}
+
+ol.players li em {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0 0 -5 0;
+}
+
+ol.players li strong {
+	display: block;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 900;
+	font-size: 2em;
+}
+
+		</style>
+
+	</head>
+
+	<body>
+		<header>
+			<h1>Top Goal Scorers</h1>
+			<p>Top Five All-time English Top Level goal scorers</p>
+		</header>
+
+		<ol class="players">
+			<li><em>Alan Shearer</em><strong>260</strong>Southampton | Blackburn Rovers | Newcastle United</li>
+			<li><em>Wayne Rooney</em><strong>198</strong>Everton | Manchester United</li>
+			<li><em>Andrew Cole</em><strong>187</strong>Arsenal | Newcastle United | Blackburn Rovers | Fulham | Manchester City | Portsmouth | Sunderland</li>
+			<li><em>Frank Lampard</em><strong>177</strong>West Ham | Swansea | Chelsea | Manchester City</li>
+			<li><em>Thierry Henry</em><strong>175</strong>Arsenal</li>
+
+		</ol>
+
+
+	</body>
+</html>
